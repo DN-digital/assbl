@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <a
             href="/#accueil"
-            className="inline-block text-xl font-semibold tracking-tight text-foreground"
+            className="inline-block text-xl font-semibold tracking-[0.08em] text-foreground"
             aria-label={site.name}
           >
             {site.brand}

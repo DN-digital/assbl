@@ -34,7 +34,7 @@ export function ExamenContent() {
               Passer le TOEIC Listening & Reading
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              assbl est un centre d’examen officiel agréé ETS Global. Vous
+              ASS.BL est un centre d’examen officiel agréé ETS Global. Vous
               préparez et passez le TOEIC « Listening & Reading » en
               présentiel.
             </p>
@@ -247,7 +247,7 @@ export function ExamenContent() {
             Certaines entreprises et certaines écoles demandent un score
             minimum. Ce seuil vise à s’assurer d’une compréhension suffisante
             pour étudier ou travailler en anglais. Il se situe souvent autour
-            de 750 points, soit un niveau B1. assbl vous oriente vers la
+            de 750 points, soit un niveau B1. ASS.BL vous oriente vers la
             préparation Listening & Reading la plus adaptée, avant le passage
             du test au centre.
           </p>
@@ -261,7 +261,7 @@ export function ExamenContent() {
               Prochaine étape
             </p>
             <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-              Passer le test avec assbl
+              Passer le test avec ASS.BL
             </h2>
             <p className="mt-5 max-w-2xl leading-relaxed text-muted">
               Indiquez-nous votre objectif et votre disponibilité. Nous

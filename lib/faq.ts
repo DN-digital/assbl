@@ -17,7 +17,7 @@ export const faqQuestions = [
   },
   {
     q: "Les formations sont-elles éligibles au CPF ?",
-    a: "Oui. Les formules TOEIC et les cours d’anglais proposés par assbl sont éligibles au Compte personnel de formation (CPF). Un échange avec le centre permet de vous indiquer les modalités de prise en charge.",
+    a: "Oui. Les formules TOEIC et les cours d’anglais proposés par ASS.BL sont éligibles au Compte personnel de formation (CPF). Un échange avec le centre permet de vous indiquer les modalités de prise en charge.",
   },
   {
     q: "Comment connaître les tarifs et disponibilités ?",
@@ -25,6 +25,6 @@ export const faqQuestions = [
   },
   {
     q: "Où se situe le centre ?",
-    a: "assbl se trouve au 3 Avenue de Garlande, 92220 Bagneux. Le plan d’accès et les transports sont indiqués en bas de page.",
+    a: "ASS.BL se trouve au 3 Avenue de Garlande, 92220 Bagneux. Le plan d’accès et les transports sont indiqués en bas de page.",
   },
 ] as const;

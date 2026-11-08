@@ -11,10 +11,10 @@ export function Center() {
             Bagneux
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Découvrez assbl
+            Découvrez ASS.BL
           </h2>
           <p className="mt-5 max-w-md leading-relaxed text-muted">
-            assbl accueille les candidats qui souhaitent préparer le TOEIC ou
+            ASS.BL accueille les candidats qui souhaitent préparer le TOEIC ou
             progresser en anglais, dans le cadre d’un projet d’études ou
             professionnel.
           </p>
@@ -32,7 +32,7 @@ export function Center() {
             <div className="relative aspect-[4/3] flex-1 overflow-hidden bg-surface lg:aspect-auto">
               <Image
                 src="/photos/salle.webp"
-                alt="Salle de formation et d’examen d’assbl à Bagneux."
+                alt="Salle de formation et d’examen d’ASS.BL à Bagneux."
                 fill
                 className="object-cover object-[center_48%]"
                 sizes="(min-width: 1024px) 44vw, 100vw"

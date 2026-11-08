@@ -1,13 +1,13 @@
 import { site, toeicFormulas } from "./site";
 
 export const seo = {
-  siteName: "assbl Centre de Langues",
-  homeTitle: "assbl Centre de Langues | Préparation au TOEIC",
+  siteName: "ASS.BL Centre de Langues",
+  homeTitle: "ASS.BL Centre de Langues | Préparation au TOEIC",
   homeDescription:
-    "Centre d’examen officiel ETS Global à Bagneux. Préparez et passez le TOEIC Listening & Reading, ou suivez des cours d’anglais éligibles CPF avec assbl.",
+    "Centre d’examen officiel ETS Global à Bagneux. Préparez et passez le TOEIC Listening & Reading, ou suivez des cours d’anglais éligibles CPF avec ASS.BL.",
   examenTitle: "Passer le TOEIC Listening & Reading à Bagneux",
   examenDescription:
-    "Déroulé du TOEIC Listening & Reading, barème CECRL et passage en présentiel au centre assbl à Bagneux, agréé ETS Global.",
+    "Déroulé du TOEIC Listening & Reading, barème CECRL et passage en présentiel au centre ASS.BL à Bagneux, agréé ETS Global.",
 } as const;
 
 export function organizationJsonLd() {

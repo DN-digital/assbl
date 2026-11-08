@@ -32,7 +32,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
         <a
           href="/#accueil"
-          className="shrink-0 text-xl font-semibold tracking-tight text-foreground sm:text-2xl"
+          className="shrink-0 text-xl font-semibold tracking-[0.08em] text-foreground sm:text-2xl"
           aria-label={site.legalName}
         >
           {site.brand}

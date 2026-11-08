@@ -1,7 +1,7 @@
 export const site = {
-  name: "assbl",
-  brand: "assbl",
-  legalName: "assbl",
+  name: "ASS.BL",
+  brand: "ASS.BL",
+  legalName: "ASS.BL",
   url: "https://www.assbl.org",
   city: "Bagneux",
   department: "Hauts-de-Seine",
