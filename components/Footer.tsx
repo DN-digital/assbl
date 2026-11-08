@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
 import { TransportLines } from "@/components/TransportLines";
@@ -7,12 +8,14 @@ export function Footer() {
     <footer className="border-t border-black/10 bg-surface">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
-          <a
-            href="/#accueil"
-            className="inline-block text-xl font-semibold tracking-[0.08em] text-foreground"
-            aria-label={site.name}
-          >
-            {site.brand}
+          <a href="/#accueil" className="inline-block" aria-label={site.name}>
+            <Image
+              src="/brand/logo.png"
+              alt={site.name}
+              width={410}
+              height={410}
+              className="h-16 w-16"
+            />
           </a>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
             Préparation et passage du TOEIC dans notre centre d’examen.

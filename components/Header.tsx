@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { nav, site } from "@/lib/site";
 
 export function Header() {
@@ -30,12 +31,15 @@ export function Header() {
         Aller au contenu
       </a>
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
-        <a
-          href="/#accueil"
-          className="shrink-0 text-xl font-semibold tracking-[0.08em] text-foreground sm:text-2xl"
-          aria-label={site.legalName}
-        >
-          {site.brand}
+        <a href="/#accueil" className="shrink-0" aria-label={site.legalName}>
+          <Image
+            src="/brand/logo.png"
+            alt={site.legalName}
+            width={410}
+            height={410}
+            priority
+            className="h-16 w-16 sm:h-20 sm:w-20"
+          />
         </a>
 
         <nav className="hidden items-center gap-4 text-[0.88rem] text-muted xl:flex xl:gap-6" aria-label="Navigation principale">
