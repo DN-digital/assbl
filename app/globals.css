@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f8fb;
+  --foreground: #12203c;
+  --muted: #53627d;
+  --surface: #eef2f8;
+  --coral: #2a5bd7;
+  --coral-hover: #1f4cbf;
+  --coral-pressed: #1a3f9e;
+  --navy: #0e1b34;
+  --peach: #f3c7b8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-coral: var(--coral);
+  --font-sans: var(--font-geist-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--coral) 35%, white);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 3px;
+}
+
+.reveal {
+  transform: translateY(12px);
+  transition: transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  transform: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-coral {
+  background: var(--coral);
+  color: #ffffff;
+}
+
+.btn-coral:hover {
+  background: var(--coral-hover);
+}
+
+.btn-dark {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background: #1c3158;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border: 1px solid #c9d3e6;
+}
+
+.btn-outline:hover {
+  border-color: var(--navy);
+  background: #ffffff;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
