@@ -40,7 +40,7 @@ export function Footer() {
         <div>
           <p className="text-sm font-medium">Coordonnées</p>
           <address className="mt-4 not-italic text-sm leading-relaxed text-muted">
-            {site.address.line1}
+            3 Rue Gabriel Cosson
             <br />
             {site.address.postalCode} {site.address.city}
             <br />
@@ -61,7 +61,7 @@ export function Footer() {
           <p className="text-sm font-medium">Venir au centre</p>
           <TransportLines />
           <a
-            href={site.mapsUrl}
+            href="https://www.google.com/maps/dir/?api=1&destination=3+Rue+Gabriel+Cosson+92220+Bagneux"
             className="btn btn-coral mt-5"
             target="_blank"
             rel="noopener noreferrer"

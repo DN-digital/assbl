@@ -106,7 +106,7 @@ export function Contact() {
             <div>
               <dt className="text-sm font-medium">Adresse</dt>
               <dd className="mt-1 text-muted">
-                {site.address.line1}
+                3 Rue Gabriel Cosson
                 <br />
                 {site.address.postalCode} {site.address.city}
               </dd>
