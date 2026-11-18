@@ -1,10 +1,10 @@
 import { site, toeicFormulas } from "./site";
 
 export const seo = {
-  siteName: "ASS.BL Centre de Langues",
-  homeTitle: "ASS.BL Centre de Langues | Préparation au TOEIC",
+  siteName: "ASSBL",
+  homeTitle: "ASSBL | Centre de langues à Bagneux",
   homeDescription:
-    "Centre d’examen officiel ETS Global à Bagneux. Préparez et passez le TOEIC Listening & Reading, ou suivez des cours d’anglais éligibles CPF avec ASS.BL.",
+    "ASSBL, centre de langues à Bagneux. Préparez le TOEIC Listening & Reading, passez l’examen agréé ETS Global et suivez des cours d’anglais éligibles CPF.",
   examenTitle: "Passer le TOEIC Listening & Reading à Bagneux",
   examenDescription:
     "Déroulé du TOEIC Listening & Reading, barème CECRL et passage en présentiel au centre ASS.BL à Bagneux, agréé ETS Global.",
@@ -13,36 +13,50 @@ export const seo = {
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "@id": `${site.url}/#organization`,
-    name: site.legalName,
-    alternateName: [site.brand, site.name],
-    url: site.url,
-    email: site.email,
-    telephone: site.phone,
-    description: seo.homeDescription,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.line1,
-      postalCode: site.address.postalCode,
-      addressLocality: site.address.city,
-      addressRegion: site.department,
-      addressCountry: "FR",
-    },
-    areaServed: ["Bagneux", "Hauts-de-Seine", "Île-de-France"],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Formules TOEIC",
-      itemListElement: toeicFormulas.map((formula) => ({
-        "@type": "Offer",
-        name: formula.title,
-        description: formula.intro,
-        price: formula.price,
-        priceCurrency: "EUR",
-        availability: "https://schema.org/InStock",
-        url: `${site.url}/#catalogue`,
-      })),
-    },
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": `${site.url}/#organization`,
+        name: "ASSBL",
+        alternateName: ["ASS.BL", "Assbl"],
+        url: site.url,
+        logo: `${site.url}/brand/logo.png`,
+        email: site.email,
+        telephone: site.phone,
+        description: seo.homeDescription,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "3 Rue Gabriel Cosson",
+          postalCode: site.address.postalCode,
+          addressLocality: site.address.city,
+          addressRegion: site.department,
+          addressCountry: "FR",
+        },
+        areaServed: ["Bagneux", "Hauts-de-Seine", "Île-de-France"],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Formules TOEIC",
+          itemListElement: toeicFormulas.map((formula) => ({
+            "@type": "Offer",
+            name: formula.title,
+            description: formula.intro,
+            price: formula.price,
+            priceCurrency: "EUR",
+            availability: "https://schema.org/InStock",
+            url: `${site.url}/#catalogue`,
+          })),
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${site.url}/#website`,
+        name: "ASSBL",
+        alternateName: "ASS.BL",
+        url: site.url,
+        inLanguage: "fr-FR",
+        publisher: { "@id": `${site.url}/#organization` },
+      },
+    ],
   };
 }
 

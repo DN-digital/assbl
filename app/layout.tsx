@@ -27,7 +27,10 @@ export const metadata: Metadata = {
     "centre d’examen ETS Global Bagneux",
     "passer le TOEIC Hauts-de-Seine",
     "cours d’anglais Bagneux",
+    "ASSBL",
     "ASS.BL",
+    "assbl",
+    "centre de langues Bagneux",
   ],
   openGraph: {
     title: seo.homeTitle,
